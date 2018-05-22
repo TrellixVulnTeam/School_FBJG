@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <script src='http://cdn.html5quintus.com/v0.1.6/quintus-all.js'></script>
+        <script src="lib/enemy.js"></script>
+        <script src="lib/asteroid.js"></script>
+        <script src="lib/boss.js"></script>
+        <script src="lib/powerUp.js"></script>
+    </head>
+    <body style="background-color: 	#708090;">  
+    	<script src='lib/game.js'> </script>
+    </body>
+</html>

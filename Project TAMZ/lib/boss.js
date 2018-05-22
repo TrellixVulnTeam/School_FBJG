@@ -1,0 +1,3 @@
+Quintus.Boss = function (Q) {
+
+}
