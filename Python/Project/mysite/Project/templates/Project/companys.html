@@ -1,0 +1,17 @@
+{% extends "Project/base.html" %}
+
+{% block title %}Companys{% endblock %}
+{% block content %}
+	<div class = "list" style="text-align:left" class = "list">
+	{% if companys %}
+	<h2>List of companys:</h2>
+		{% for company in companys %}
+			<a href="/company/{{ company.id }}/"><button class = "listButton">{{ company.name }}</button></a>
+		{% endfor %}
+
+	{% else %}
+		<h3>Any companys in the database.</h3>
+	{% endif %}
+	</div>
+
+{% endblock %}

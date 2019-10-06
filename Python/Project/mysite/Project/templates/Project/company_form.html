@@ -1,0 +1,27 @@
+{% extends "Project/base.html" %}
+
+{% block title %}Company form{% endblock %}
+{% block content %}
+
+<div class = "list" align="left">
+	<h1 align="left">Company form</h1>
+
+	<table align = "center">
+	        <form action="/company_form/" method="POST">
+        	    	{% csrf_token %}
+			<tr>        		
+			<td>{{form.as_p}}</td>
+			</tr>
+            		<tr>
+        		<td><input class = "back" type="submit" name="submit" value="Save" /></td>
+			</tr>
+			<tr>
+			<td>{%if success %}<font color="green">Successfully added!</font>{%endif%}</td>
+			</tr>
+	        </form>
+	</table>
+</div>
+
+       
+
+{% endblock %}

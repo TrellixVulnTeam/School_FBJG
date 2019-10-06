@@ -1,0 +1,14 @@
+{% extends "Project/base.html" %}
+
+{% block title %}{{ alcohol.name }}{% endblock %}
+{% block content %}
+
+<div class = "list">
+
+	<h2>{{ alcohol.name }}</h2>
+	<h4>Type: {{ alcohol.kind }}</h4>
+	<h4>Company: <a href="/company/{{ alcohol.company.id }}/">{{ alcohol.company }}</a></h4>
+	<p><b>Description</b>: {{ alcohol.description }}</p>
+	<a href="/alcohols/"><button class = "back">Back</button></a>
+</div>
+{% endblock %} 

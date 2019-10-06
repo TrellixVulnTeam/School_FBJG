@@ -1,0 +1,62 @@
+{% extends "Project/base.html" %}
+
+{% block title %}Search{% endblock %}
+{% block content %}
+
+	<div class = "list" align="left">
+		<h1>Looking for some alcohols</h1>
+		{% csrf_token %}
+		<style>
+
+
+		
+		</style>
+
+		<table>
+			<form align="left" action="/search" method="GET">
+
+				<tr>
+				<td><p>Searching by alcohol name:</p></td> <td><input  type="text" name="alcohol_input" placeholder="Alcohol name" value="{% if searched_alcohol %}{{ searched_alcohol }}{% endif %}"></td>
+				<td><input class = "back" type="submit" value="Search"></td>
+				<tr>
+			</form>	
+		  
+		{% csrf_token %}
+			<form align="left" action="/search" method="GET">
+				<tr>		
+				<td><p>Searching by company name:</p></td> <td><input  type="text" name="company_input" placeholder="Company name" value="{% if searched_company %}{{ searched_company }}{% endif %}"></td>
+				<td><input class = "back" type="submit" value="Search"></td>
+				</tr>
+			</form>	
+		</table>	
+		<div align = "center">
+		{% for letter in alphabet %}
+
+		    <a href="/search/{{ letter }}/"><button class = "alphabet">{{ letter }}</button></a>
+
+		{% endfor %}
+		</div>
+	{% if alcohols %}
+		<h2>List of found alcohols:</h2>
+
+	    {% for alcohol in alcohols %}
+	        <a href="/alcohol/{{ alcohol.id }}/"><button class = "listButton">{{ alcohol.name }} - {{ alcohol.company.name }}</button></a>
+	    {% endfor %}
+
+
+	{% else %} 
+		{% if first_letter  %}
+			<h4 color="red" align="center">No alcohol starting with the letter {{ first_letter }} was found!</h4>	
+		{% elif searched_alcohol %}
+			<h4 color="red" align="center">No alcohol going by the name {{ searched_alcohol }} was found!</h4>		
+			
+		{% elif searched_company %}
+			<h4 color="red" align="center">No company going by the name {{ searched_company }} was found!</h4>		
+		{% endif %}
+	</div>
+
+	{% endif %}
+
+{% endblock %}
+
+

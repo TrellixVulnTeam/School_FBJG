@@ -1,0 +1,15 @@
+{% extends "Project/base.html" %}
+
+{% block title %}Alcohols{% endblock %}
+{% block content %}
+<div class = "list" style="text-align:left">
+{% if alcohols %}
+	<h2>List of alcohols:</h2>
+	    {% for alcohol in alcohols %}
+	        <a href="/alcohol/{{ alcohol.id }}/"><button class = "listButton">{{ alcohol.name }} from {{ alcohol.company.name }}</button></a>
+	    {% endfor %}
+{% else %}
+	<h3>Any alcohols in the database.</h3>
+{% endif %}
+</div>
+{% endblock %}

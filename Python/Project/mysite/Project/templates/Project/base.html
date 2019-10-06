@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}Project{% endblock %}</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style>
+	html, body
+	{
+		background-color: white;
+		margin: 0px;
+		font-family: "Arial", Helvetica, Sans-serif;	
+		height: 100%;
+		min-height: 100%;
+  		display: table;
+		width: 100%;
+	}	
+	
+	a
+	{
+		text-decoration: none;
+	}
+
+	.header
+	{
+		padding: 5px 15px;
+		background-color: grey;
+	}
+	
+	.header a
+	{
+		text-decoration: none;	
+		color: black;	
+
+	}
+
+	.header a:hover
+	{
+		text-decoration: none;	
+		opacity: 0.7;
+	}
+
+	.button
+	{
+		border: none;
+		height: 30px;
+		width: 90%;
+		color: black;
+		text-decoration: none;
+		background-color: grey;
+	    	display: inline-block;
+		font-size: 16px;
+		margin: -2.3px;
+	}	
+	
+	.button:hover
+	{
+		background-color: dimgrey;
+		color: white;
+	}
+	
+	
+	.listButton
+	{
+		border: none;
+		width: 100%;
+
+		color: black;
+		background-color: grey;
+		height: 40px;
+	}
+	
+	td
+	{
+		text-align: right;		
+	}	
+	
+	.listButton:hover
+	{
+		color: white;
+		background-color: dimgrey;	
+	}
+	
+	.back
+	{
+		margin-top: 10px;
+		border: none;
+		height: 40px;
+		width: 100px;
+	}
+
+	.back:hover
+	{
+		background-color: silver;
+	}
+
+	.alphabet
+	{
+		margin-top: 10px;
+		border: none;
+		height: 30px;
+		width: 30px;
+	}
+
+	.alphabet:hover
+	{
+		background-color: silver;
+	}
+
+	.list
+	{
+		/*background-color: grey;*/
+		padding-top: 10px;		
+		margin-top: 0px;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 40px;
+	}
+
+	.footer
+	{
+		width: 100%;
+		height: 40px;
+		background-color: grey;
+		display: table-row;
+	}
+
+	td input
+	{
+		height:34px;
+		margin-top: 10px;
+	}
+
+	td p
+	{
+		/*background-color: grey;*/
+		margin-top: 25px;
+	}
+	
+	select
+	{
+		height: 40px;
+		border: none;
+		/*background-color: white;*/
+	}
+	select:hover
+	{
+		background-color: silver;		
+	}
+
+	@media screen and (min-width: 1500px) {
+	
+	.button
+	{
+		border: none;
+		height: 30px;
+		width: 10%;
+		color: black;
+		text-decoration: none;
+		background-color: grey;
+	    	display: inline-block;
+		font-size: 16px;
+		margin: -2.3px;
+	}
+	
+	.list
+	{
+		/*background-color: grey;*/
+		padding-top: 10px;		
+		margin-top: 0px;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	}
+	</style>
+</head>
+<body>
+<div class="header" align="left"><h1><a href="{% url 'index' %}">SPJA project</a></h1></div>
+<div class="menu" align="center">
+	
+		<a href="{% url 'index' %}"><button class = "button">Main page</button></a>
+		<a href="/alcohols/"><button class = "button">Alcohols</button></a>
+		<a href="/search/"><button class = "button">Look for alcohols</button></a>
+		<a href="/companys/"><button class = "button">Companys</button></a>
+		<a href="/alcohol_form/"><button class = "button">Add Alcohol</button></a>
+		<a href="/company_form/"><button class = "button">Add Company</button></a>
+		<a href="/kind_form/"><button class = "button">Add Kind of alcohol</button></a>
+	
+</div>
+
+ <div id="content" text-align="center">{% block content %}{% endblock %}</div>
+<footer class = "footer" align = "center"><p>&copy2017 - Author: Lukáš Moravec -<a href="{% url 'index' %}"> Main Page </a></p></footer>
+</body>
+</html>

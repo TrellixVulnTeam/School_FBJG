@@ -1,0 +1,27 @@
+{% extends "Project/base.html" %}
+
+{% block title %}alcohol form{% endblock %}
+{% block content %}
+
+<div class = "list" align="center">
+	<h1 align="left">Alcohol form</h1>
+
+	<table>
+        	<form action="/alcohol_form/" method="POST">
+            		{% csrf_token %}
+			<tr>
+            		<td>{{form.as_p}}</td>
+			</tr>
+            		<tr>
+            		<td><input class = "back" type="submit" name="submit" value="Save" /></td>
+			</tr>
+			<tr>			
+			<td>{%if success %}<font color="green">Successfully added!</font>{%endif%}</td>
+			</tr>
+	        </form>
+	</table>
+</div>
+
+       
+
+{% endblock %}
