@@ -1,0 +1,43 @@
+.bottom
+{
+padding-top: 5px; 
+width: 100%;
+color: white;
+
+
+}
+
+.bottom table
+{
+width: 100%;
+}
+
+.bottom table td
+{
+width: 100px;
+}
+
+.bottom #left
+{
+text-align:right; 
+
+}
+
+.bottom #left a
+{
+text-decoration: none;
+color: white;
+
+}
+
+.bottom #left p:hover
+{
+text-decoration: none;
+color: black;
+}
+
+
+.bottom #right
+{
+text-align: left;
+}

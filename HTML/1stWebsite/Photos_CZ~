@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Images</title>
+<meta name="generator" content="Bluefish 2.2.5" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="Main_css.css" rel="stylesheet">
+</head>
+<body>
+
+<form name="Select">
+
+<select name="Language" id="Language">
+<option value="Main_menu_ENG">ENG</option>
+<option value="Main_menu_CZ">CZ</option>
+</select>
+</form>
+
+
+<img id="icon" src="Images/Icon 32x32.png" alt="icon">
+<div id="head">
+<a href="Main_menu"><h1 id="logo">LUMO company</h1></a> 
+</div>
+
+<div id="navigation"> 
+
+
+<div id="dn" ><a id="an" href="Main_menu_CZ.html">Hlavní strana</a></div>
+<div id="dn"><a id="an" href="Form_CZ.html">Formulář</a></div>
+<div id="dn"><a id="an" href="Photos_CZ.html">Foto</a></div>
+<div id="dn"><a id="an" href="Table_CZ.html">Tabulka</a></div>
+
+</div>
+
+<div id="main"=>
+ 
+ <h1>LUMO company</h1> 
+ <h2>Our products</h2>
+ <img src="Images/antitank_barrier.png" alt="antitank_barrier" height="25%" width="25%">
+ <img src="Images/barrier.png" alt="barrier" height="25%" width="25%">
+ <img src="Images/Barbed_wire.png" alt="barbed_wire" height="25%" width="25%">
+ <img src="Images/sandbags.png" alt="sandbags" height="25%" width="25%">
+ <img src="Images/Hesco_bastion.png" alt="bastion" height="25%" width="25%">
+ <img src="Images/Business card (US).png" alt="card" height="25%" width="25%">
+ </div>
+</div>
+
+<div id="bottom">
+<p>&copy Lukáš Moravec</p>
+</div>
+ 
+
+</body>
+</html>

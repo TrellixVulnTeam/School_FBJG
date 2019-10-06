@@ -1,0 +1,9 @@
+var urlMenu = document.getElementById('Language');
+urlMenu.onchange = function () {
+
+	var userOption = this.options[this,selectedIndex];
+	if (userOption.value != "Main_menu_ENG.html") {
+	window.open(userOption.value, "Select page", "");
+	}
+}	
+	

@@ -1,0 +1,14 @@
+<?php
+include "head.php";
+?>
+<link rel="stylesheet" href="main.css" type="text/css">
+<title>Formulář</title>
+</head>
+
+<?php
+include "body.php";
+?>
+
+<div id="main">
+
+</div>

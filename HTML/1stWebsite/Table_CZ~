@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table</title>
+<meta name="generator" content="Bluefish 2.2.5" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="Main_css.css" rel="stylesheet">
+</head>
+<body>
+
+<form name="Select">
+
+<select name="Language" id="Language">
+<option value="Main_menu_ENG">ENG</option>
+<option value="Main_menu_CZ">CZ</option>
+</select>
+</form>
+
+
+
+<img id="icon" src="Images/Icon 32x32.png" alt="icon">
+<div id="head">
+<a href="Main_menu"><h1 id="logo">LUMO company</h1></a> 
+</div>
+
+<div id="navigation"> 
+
+
+<div id="dn" ><a id="an" href="Main_menu_CZ.html">Hlavní strana</a></div>
+<div id="dn"><a id="an" href="Form_CZ.html">Formulář</a></div>
+<div id="dn"><a id="an" href="Photos_CZ.html">Foto</a></div>
+<div id="dn"><a id="an" href="Table_CZ.html">Tabulka</a></div>
+
+</div>
+
+<div id="main"=>
+  
+ <h1>LUMO company</h1> 
+ 
+
+ <table>
+ <tr> 
+ <th id="tab">Product item</th>
+ <th id="tab">Price</th>
+ </tr>
+ <tr>
+ <td>Barrier</td>
+ <td>100$</td>
+ </tr>
+ 
+ <tr>
+ <td>Antitank barrier</td>
+ <td>500$</td> 
+ </tr>
+ 
+ <tr>
+ <td>sandbags</td>
+ <td>50$</td> 
+ </tr>
+ 
+ <tr>
+ <td>Barbed wire</td>
+ <td>60$</td> 
+ </tr>
+ 
+ <tr>
+ <td>Hesco bastion</td>
+ <td>200$</td> 
+ </tr>
+ </table>
+
+ 
+ </div>
+</div>
+
+<div id="bottom">
+<p>&copy Lukáš Moravec</p>
+</div>
+ 
+
+</body>
+</html>

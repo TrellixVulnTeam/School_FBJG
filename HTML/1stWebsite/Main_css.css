@@ -1,0 +1,117 @@
+body
+{
+	font-family: sans-serif;
+	font-size: 16px;
+	background-color: dimgrey; 
+	color: dimgrey;
+	padding: 0px;
+}
+
+#Selectdiv
+{
+	margin-left: 96%;
+	position: relative;
+}
+
+#icon
+{
+	float: right;
+	border-radius: 16px 16px 16px 16px;
+	margin-right: 50%;
+	margin-top: 20px; 
+	position: relative; 
+}
+
+#head
+{
+	 /*border-radius: 5px 5px 5px 5px;*/
+	 margin: 1%;
+	 font-size: 25px;
+	 padding-top: 5px;
+	 position: relative;
+}
+
+#navigation
+{
+	 background-color: #ffffff;
+	 float: left;
+	 width: 20%;
+	 /*border-radius:5px 0px 0px 5px ;*/
+    box-shadow: black 2px 3px 5px; 	 
+	 margin-left: 1%b;
+	 position: relative;
+}
+
+#main 
+{
+    background-color: #ffffff;
+    box-shadow: black 2px 3px 5px;
+    float: right;
+    width: 75%;
+    padding: 1%;
+    /*border-radius: 0px 5px 5px 0px;*/
+    margin-right: 1%;
+    position: relative;
+}
+
+#bottom
+{
+text-align: center;
+color: white;
+margin-top: 15%;
+position: relative;
+}
+
+h1
+{
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}
+
+a
+{
+	 text-decoration: none;
+	 font-size: 26px;	
+ 	 color: dimgrey;
+}
+
+
+
+#dn p
+{
+ 	 text-align: center;
+	 border-bottom: 2.5px solid dimgrey;
+	 padding: 2%;
+	 margin: 0;
+}
+
+#dn a:hover
+{
+	 color: black;
+}
+
+#logo:hover
+{
+	color: black;
+	border-bottom: 3px solid black;
+}
+
+#tb #button td input
+{
+	 width: 100px;
+}
+
+#tab tr th
+{
+	width: 20%; 
+	text-align: left;
+	border-bottom-style:solid;
+	border-collapse: collapse;
+}
+
+th
+{
+	text-align: left;
+}

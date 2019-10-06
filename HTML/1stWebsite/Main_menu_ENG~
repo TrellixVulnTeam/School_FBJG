@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Main page</title>
+<meta name="generator" content="Bluefish 2.2.5" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href="Main_css.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<form name="Select">
+
+<select name="Language" id="Language">
+<option value="Main_menu_ENG">ENG</option>
+<option value="Main_menu_CZ">CZ</option>
+</select>
+</form>
+
+<img id="icon" src="Images/Icon 32x32.png" alt="icon">
+
+<div id="head">
+<a href="Main_menu"><h1 id="logo">LUMO company</h1></a> 
+</div>
+
+<div id="navigation"> 
+
+
+<div id="dn" ><a id="an" href="Main_menu_ENG">Home</a></div>
+<div id="dn"><a id="an" href="Form_ENG">Form</a></div>
+<div id="dn"><a id="an" href="Photos_ENG">Images</a></div>
+<div id="dn"><a id="an" href="Table_ENG">Table</a></div>
+
+</div>
+
+<div id="main"=>
+ 
+ <h1>LUMO company</h1> 
+ <h2>Our company is the best you ever seen!!!</h2>
+ <p>We are the best!</p>
+ <p></p>
+</div>
+
+
+<div id="bottom">
+ <p>&copy Lukáš Moravec</p>
+</div>
+ 
+<script src="Main_script_ENG.js"></script> 
+ 
+</body>
+</html>

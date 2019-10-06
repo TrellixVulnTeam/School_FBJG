@@ -1,0 +1,6 @@
+
+<?php
+
+$spojeni = mysqli_connect("localhost","lumocompany.tk","14Nndqe19Y", "lumocompany_tk") or die ("nelze připojit");
+mysqli_set_charset($spojeni, "utf8");
+?>
