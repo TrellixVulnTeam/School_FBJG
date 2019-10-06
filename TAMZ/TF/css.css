@@ -1,0 +1,41 @@
+body{
+	background: gray;
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+.main{
+text-align: center;
+font-family: Arial;
+}
+
+#time{
+background: white;
+padding: 20px;
+margin-top: 10px;
+border-radius: 5px;
+}
+
+#doom{
+background: white;
+padding: 20px;
+margin-top: 10px;
+border-radius: 5px;
+}
+
+#toLive{
+background: white;
+padding: 20px;
+margin-top: 10px;
+border-radius: 5px;
+}
+
+@media only screen and (min-width:960px){
+.main{
+width: 50%;
+padding-left: 25%;
+padding-top: 50px;
+
+}
+}

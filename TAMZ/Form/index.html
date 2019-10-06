@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Form</title>
+</head>
+<body>
+<div class="main">
+	<table align="center">
+	<form>	
+		<tr>
+			<td colspan="2" ><img src="LUMOlogo.png" alt="LUMOtradeservice" height="110"></td>		
+		</tr>
+		<tr>
+			<td>First name: </td>
+			<td><input id="fn" type="text" placeholder="Lukas" maxlength="42" required></td>		
+		</tr>	
+		<tr>
+			<td>Last name: </td>
+			<td><input id="ln" type="text" placeholder="Moravec" maxlength="42" required></td>		
+		</tr>	
+		<tr>
+			<td>Age: </td>
+			<td><input id="age" type="number"  min="0" placeholder="21" max="200" onKeyPress="if(this.value.length==3) return false;" required></td>		
+		</tr>
+		<tr>
+			<td>Email: </td>
+			<td><input id="email" type="email" placeholder="example@example.com" maxlength="42" required></td>		
+		</tr>
+		<tr>
+			<td>Phone: </td>
+			<td><input id="tel" type="tel" placeholder="123 456 789" onKeyPress="if(this.value.length==11) return false;" onkeydown="GetPhoneFormat('tel')" required></td>		
+		</tr>										
+		<tr>
+			<td><input id="reset" type="reset" ></td>
+			<td><input id="button" type="submit" onclick="save()"></td>		
+		</tr>
+		<tr>
+			<td></td>
+			<td><input id="load" value="Load" type="button" onclick="loadData(); return false; "></td>		
+		</tr>
+	</form>
+	</table>
+	
+
+</div>
+
+	<script>
+
+		function save(){
+			if (typeof(Storage) !== "undefined") {
+				localStorage.setItem("fn", document.getElementById('fn').value);
+				localStorage.setItem("ln", document.getElementById('ln').value);
+				localStorage.setItem("age", document.getElementById('age').value);
+				localStorage.setItem("email", document.getElementById('email').value);
+				localStorage.setItem("tel", document.getElementById('tel').value);
+				sessionStorage.setItem("fn", document.getElementById('fn').value);
+				sessionStorage.setItem("ln", document.getElementById('ln').value);
+				sessionStorage.setItem("age", document.getElementById('age').value);
+				sessionStorage.setItem("email", document.getElementById('email').value);
+				sessionStorage.setItem("tel", document.getElementById('tel').value);
+			}else {
+    			document.getElementById("fn").innerHTML = "Sorry, your browser does not support Web Storage...";
+			}
+		}		
+			document.getElementById("fn").value = sessionStorage.getItem("fn");
+			document.getElementById("ln").value = sessionStorage.getItem("ln");
+			document.getElementById("age").value = sessionStorage.getItem("age");
+			document.getElementById("email").value = sessionStorage.getItem("email");
+			document.getElementById("tel").value = sessionStorage.getItem("tel");
+		function loadData(){
+			document.getElementById("fn").value = localStorage.getItem("fn");
+			document.getElementById("ln").value = localStorage.getItem("ln");
+			document.getElementById("age").value = localStorage.getItem("age");
+			document.getElementById("email").value = localStorage.getItem("email");
+			document.getElementById("tel").value = localStorage.getItem("tel");
+		}	
+		
+		var len=0;
+		function GetPhoneFormat(id) {
+			var str = document.getElementById(id).value;
+			if(str.length > len){
+				if (str.length == 3) {
+					var ind = str.substring(0, 3);
+					document.getElementById(id).value = ind+' ';
+				}
+				if (str.length == 7) {
+					var ind = str.substring(0, 7);
+					document.getElementById(id).value = ind+' ';
+				}
+			}else {
+				if (str.length == 5) {
+					var ind = str.substring(0, 4);
+					document.getElementById(id).value = ind;
+				}
+				if (str.length == 9) {
+					var ind = str.substring(0, 8);
+					document.getElementById(id).value = ind;
+				}
+			}
+			len = str.length;
+		}
+	</script>
+</body>
+</html>

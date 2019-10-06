@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="91.44mm"
+   height="91.44mm"
+   version="1.1"
+   style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+   viewBox="0 0 9144 9144"
+   id="svg13"
+   sodipodi:docname="admired.svg"
+   inkscape:export-filename="C:\Users\morav\PycharmProjects\URO\admired.png"
+   inkscape:export-xdpi="6.6666665"
+   inkscape:export-ydpi="6.6666665"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata17">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview15"
+     showgrid="false"
+     inkscape:zoom="0.68287035"
+     inkscape:cx="172.8"
+     inkscape:cy="172.8"
+     inkscape:window-x="1672"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13" />
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style2">  .fil0 {fill:#F0F0F0} .fil1 {fill:#011627;fill-rule:nonzero}  </style>
+  </defs>
+  <path
+     class="fil1"
+     d="m 5042,5477 c 0,-197 -56,-374 -147,-501 -85,-119 -199,-192 -323,-192 -124,0 -238,73 -323,192 -91,127 -147,304 -147,501 0,197 56,374 147,501 85,119 199,192 323,192 124,0 238,-73 323,-192 91,-127 147,-304 147,-501 z m 816,-2425 c 33,36 30,92 -5,125 -36,33 -92,30 -125,-5 -30,-34 -67,-60 -108,-78 -40,-17 -84,-27 -129,-27 -28,0 -54,3 -79,10 -25,6 -50,16 -74,29 -42,24 -96,8 -119,-35 -24,-42 -8,-96 35,-119 36,-20 74,-35 115,-45 40,-11 82,-16 122,-16 70,0 138,14 200,42 63,27 119,68 167,119 z m -2442,120 c -33,35 -89,38 -125,5 -35,-33 -38,-89 -5,-125 48,-51 104,-92 167,-119 62,-28 130,-42 200,-42 40,0 82,5 122,16 41,10 79,25 115,45 43,23 59,77 35,119 -23,43 -77,59 -119,35 -24,-13 -49,-23 -74,-29 -25,-7 -51,-10 -79,-10 -45,0 -89,10 -129,27 -41,18 -78,44 -108,78 z m 3185,1400 c 0,-560 -227,-1067 -594,-1435 -368,-367 -875,-594 -1435,-594 -560,0 -1067,227 -1435,594 -367,368 -594,875 -594,1435 0,560 227,1067 594,1435 368,367 875,594 1435,594 560,0 1067,-227 1435,-594 367,-368 594,-875 594,-1435 z M 6131,3013 c 399,399 646,950 646,1559 0,609 -247,1160 -646,1559 -399,399 -950,646 -1559,646 -609,0 -1160,-247 -1559,-646 -399,-399 -646,-950 -646,-1559 0,-609 247,-1160 646,-1559 399,-399 950,-646 1559,-646 609,0 1160,247 1559,646 z m -371,1070 c 0,-86 -24,-162 -62,-216 -33,-45 -75,-73 -119,-73 -44,0 -86,28 -119,73 -38,54 -62,130 -62,216 0,86 24,162 62,216 33,45 75,73 119,73 44,0 86,-28 119,-73 38,-54 62,-130 62,-216 z m 81,-318 c 59,83 95,195 95,318 0,123 -36,235 -95,318 -65,91 -158,147 -262,147 -104,0 -197,-56 -262,-147 -59,-83 -95,-195 -95,-318 0,-123 36,-235 95,-318 65,-91 158,-147 262,-147 104,0 197,56 262,147 z m -2095,318 c 0,-86 -24,-162 -62,-216 -33,-45 -75,-73 -119,-73 -44,0 -86,28 -119,73 -38,54 -62,130 -62,216 0,86 24,162 62,216 33,45 75,73 119,73 44,0 86,-28 119,-73 38,-54 62,-130 62,-216 z m 81,-318 c 59,83 95,195 95,318 0,123 -36,235 -95,318 -65,91 -158,147 -262,147 -104,0 -197,-56 -262,-147 -59,-83 -95,-195 -95,-318 0,-123 36,-235 95,-318 65,-91 158,-147 262,-147 104,0 197,56 262,147 z m 1211,1109 c 111,155 180,369 180,603 0,234 -69,448 -180,603 -117,165 -282,266 -466,266 -184,0 -349,-101 -466,-266 -111,-155 -180,-369 -180,-603 0,-234 69,-448 180,-603 117,-165 282,-266 466,-266 184,0 349,101 466,266 z"
+     id="path9"
+     inkscape:connector-curvature="0"
+     style="fill:#011627;fill-rule:nonzero" />
+</svg>

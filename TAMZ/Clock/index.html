@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<title>Clock</title>
+</head>
+<body onkeypress="myFunction(event)">
+<style type="text/css">
+	body{
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		background-color: #757575;
+		font-family: "helvetica";
+
+		#overflow: hidden;
+		text-align: center;
+	}
+	
+	button{
+		width: 25%;
+		height: 110px;
+		background-color: white;	
+		border: 0px;
+		margin-top: 4px;
+		color: #737373;
+		font-size: 30px;		
+	}
+	button:hover{
+		background-color: #70db70;
+	}
+	
+</style>
+<canvas id="myCanvas" width="350" height="350" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>	
+<br>
+<button type="button" onclick="next_col_1()">1</button>
+<button type="button" onclick="next_col_2()">2</button>
+<button type="button" onclick="next_col_3()">3</button>
+<br>
+<button type="button" onclick="next_col_4()">4</button>
+<button type="button" onclick="onoff()">5</button>
+<button type="button" onclick="prev_col_6()">6</button>
+<br>
+<button type="button" onclick="prev_col_7()">7</button>
+<button type="button"onclick="prev_col_8()">8</button>
+<button type="button"onclick="prev_col_9()">9</button>
+<br>
+<script type="text/javascript">
+canvas_resize();
+
+var myVar = setInterval(canvas_resize, 10);
+var sound = setInterval(sound, 1000);
+
+var i = 0, x = 0, y = 0, z = len, on=1, len = 0;
+
+
+function myFunction(event) {
+    var x = event.which;
+    onkey(x);
+}
+
+function onkey(x) {
+	switch(x) {
+		case 49:
+			next_col_1();
+			break;
+		case 50:
+			next_col_2();
+			break;		
+		case 51:
+			next_col_3();
+			break;
+		case 52:
+			next_col_4();
+			break;
+		case 53:
+			onoff();
+			break;
+		case 54:
+			prev_col_6();
+			break;
+		case 55:
+			prev_col_7();
+			break;
+		case 56:
+			prev_col_8();
+			break;
+		case 57:
+			prev_col_9();
+			break;									
+		default:
+			break;	
+	}
+}
+
+function next_col_1(){
+	if (i < len-1) {
+	i++;	
+	}else {
+		i=0;
+	}	
+	
+}
+
+function next_col_2(){
+	if (x < len-1) {
+	x++;	
+	}else {
+		x=0;
+	}	
+	
+}
+
+function next_col_3(){
+	if (y < len-1) {
+	y++;	
+	}else {
+		y=0;
+	}	
+	
+}
+
+function next_col_4(){
+	if (z < len-1) {
+	z++;	
+	}else {
+		z=0;
+	}	
+	
+}
+
+function onoff() {
+	if (on==1) {
+		on=0;	
+	}else {
+		on=1;	
+	}	
+}
+
+function prev_col_6(){
+	if (z > 0) {
+	z--;	
+	}else {
+		z=len-1;
+	}	
+	
+}
+
+function prev_col_7(){
+	if (i > 0) {
+	i--;	
+	}else {
+		i=len-1;
+	}	
+	
+}
+
+function prev_col_8(){
+	if (x > 0) {
+	x--;	
+	}else {
+		x=len-1;
+	}	
+	
+}
+
+function prev_col_9(){
+	if (y > 0) {
+	y--;	
+	}else {
+		y=len-1;
+	}	
+	
+}
+
+function sound(){
+	var myMusic;
+	myMusic = new Audio("Noice.mp3");
+
+	myMusic.play();
+}
+	
+function canvas_resize() {
+	var col = ["#70db70", "#66CC01", "#00ffcc", "#33cccc", "#ccccff", "#ff99cc", "#ff33cc", "#993399", "#660033", "#993333", "#990000", "#000000", "#009933", "#24478f", "#996600", "#ffd480"];
+	len = col.length;
+	var d = new Date();
+	var n = d.getDate();
+	var j = d.getMonth();
+	var k = d.getFullYear();
+	var s = d.getSeconds();
+	var ms = d.getMilliseconds();
+	var m = d.getMinutes();
+	var h = d.getHours();
+	var c = document.getElementById("myCanvas");
+	var posx = 175, posy = 175, rad = 100;
+	var colo = "#808080";
+	
+
+	var cta = c.getContext("2d");
+	cta.clearRect(0, 0, 400, 400);
+	cta.beginPath();
+	cta.arc(posx, posy, rad-30, 0*Math.PI, 2*Math.PI);
+  	cta.lineWidth = 8;
+  	cta.fillStyle = colo;
+  	cta.filter = 'blur(15px)';
+	cta.fill();
+		
+	var ctb = c.getContext("2d");
+	ctb.beginPath();
+	ctb.arc(posx, posy, rad, 0*Math.PI, 2*Math.PI);
+	ctb.strokeStyle = colo;
+  	ctb.lineWidth = 8;
+  	ctb.filter = 'blur(0.3px)';
+	ctb.stroke();
+	
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(posx, posy, rad, 1.5*Math.PI, ((s+ms/1000)-15)*0.033333333333333333*Math.PI);
+	
+   ctx.strokeStyle = col[y];
+  	ctx.lineWidth = 8;
+  	ctx.filter = 'blur(0.3px)';
+	ctx.stroke();
+	
+	var ctb1 = c.getContext("2d");
+	ctb1.beginPath();
+	ctb1.arc(posx, posy, rad+20, 0*Math.PI, 2*Math.PI);
+	ctb1.strokeStyle = colo;
+  	ctb1.lineWidth = 8;
+	ctb1.stroke();	
+	
+	var ctx1 = c.getContext("2d");
+	ctx1.beginPath();
+	ctx1.arc(posx, posy, rad+20, 1.5*Math.PI, (m-15)*0.033333333333333333*Math.PI);
+	ctx1.strokeStyle = col[x];
+  	ctx1.lineWidth = 8;
+	ctx1.stroke();
+
+	var ctb2 = c.getContext("2d");
+	ctb2.beginPath();
+	ctb2.arc(posx, posy, rad+40, 0*Math.PI, 2*Math.PI);
+	ctb2.strokeStyle = colo;
+  	ctb2.lineWidth = 8;
+	ctb2.stroke();
+		
+	var ctx2 = c.getContext("2d");
+	ctx2.beginPath();
+	ctx2.arc(posx, posy, rad+40, 1.5*Math.PI, (h-12)*0.08333333333333333*Math.PI);
+	ctx2.strokeStyle = col[i];
+  	ctx2.lineWidth = 8;
+	ctx2.stroke();
+	
+	var ctx3 = c.getContext("2d");
+	ctx3.fillStyle = "black";
+	ctx3.font = "20px helvetica";
+	ctx3.textAlign = "center";
+	if (on==1) {
+		ctx3.fillStyle = col[z];	
+		ctx3.fillText(n+"."+j+"."+k,posx,posy+5)
+	}
+	ctx3.stroke();	
+			
+}
+</script>
+</body>
+</html>

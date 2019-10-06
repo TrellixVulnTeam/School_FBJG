@@ -1,0 +1,69 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.main{
+	text-align: right;
+	margin-top: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main input{
+	width: 170px;
+}
+
+img{
+	padding-bottom: 30px;
+}
+
+.main input{
+	height: 30px;
+}
+
+.main #button{
+	width: 100%;
+	background-color: #00b700;
+	color: white;
+	border-style: none;  
+}
+
+.main #button:hover{
+	background-color: #00cc00;	
+}
+
+.main #reset{
+	width: 100%;
+	border-style: none;
+}
+
+.main #reset:hover{
+	background-color: #f21313;
+	color: white;
+}
+
+.main #load{
+	width: 100%;
+	border-style: none;
+	height: 30px;
+}
+
+.main #load:hover{
+	background-color: #686868;
+	color: white;
+}
+
+.main #load:disabled{
+	background-color: gainsboro;
+	color: gray;
+}
+
+input:focus {
+    outline-color: gray;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
